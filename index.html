@@ -1,0 +1,69 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-магазин "від Бені"
+    </title>
+    <!-- Підключення CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="orderForm" class="order-form" action="result.html" method="get">
+
+        <h2>Заповніть форму замовлення</h2>
+        
+        <!-- Ім'я -->
+        <label for="first-name">Ваше ім'я:</label>
+        <input type="text" id="first-name" name="first_name" placeholder="Введіть своє ім'я" required>
+        
+        <!-- Прізвище -->
+        <label for="last-name">Ваше прізвище:</label>
+        <input type="text" id="last-name" name="last_name" placeholder="Введіть своє прізвище" required>
+        
+        <!-- Адреса -->
+        <label for="address">Адреса:</label>
+        <input type="text" id="address" name="address" placeholder="Введіть вашу адресу" required>
+        
+        <!-- Список вибору велосипедів -->
+        <label for="bike-model">Виберіть :</label>
+        <select id="bike-model" name="bike_model" required>
+            <option value="" disabled selected>Виберіть колір...</option>
+            <option value="mountain">білий</option>
+            <option value="city">чорний</option>
+            <option value="road">синій</option>
+        </select>
+    
+        <!-- Радіо кнопки (Розмір камери) -->
+        <p>виберіть розмір камери:</p>
+        <div class="radio-options">
+            <input type="radio" id="small" name="bike_size" value="малий" required>
+            <label for="small">Малий</label>
+    
+            <input type="radio" id="medium" name="bike_size" value="середній">
+            <label for="medium">Середній</label>
+    
+            <input type="radio" id="large" name="bike_size" value="великий">
+            <label for="large">Великий</label>
+        </div>
+    
+        <!-- Чекбокси -->
+        <p>Додаткові опції:</p>
+        <div class="checkbox-options">
+            <input type="checkbox" id="gift-wrap" name="gift_wrap" value="yes">
+            <label for="gift-wrap">великий обєктив</label>
+    
+            <input type="checkbox" id="no-call" name="no_call" value="yes">
+            <label for="no-call">подвійна камера</label>
+        </div>
+    
+        <!-- Текстове поле для коментаря -->
+        <label for="comments">Коментар до замовлення:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Напишіть ваші побажання або питання"></textarea>
+    
+        <!-- Кнопка відправки -->
+        <button type="submit">Замовити камеру</button>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

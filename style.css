@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif; /* Шрифт для тексту */
+    background-color: #970a34; /* Світло-сірий фон */
+    margin: 0; /* Відсутність зовнішніх відступів сторінки */
+    padding: 20px; /* Внутрішні відступи сторінки */
+}
+
+/* Стилізація форми */
+.order-form {
+    max-width: 500px; /* Максимальна ширина форми */
+    margin: 20px auto; /* Центрування форми */
+    padding: 20px; /* Відступ усередині форми */
+    background-color: #ffffff; /* Білий фон */
+    border: 2px solid #ddd; /* Сіра рамка */
+    border-radius: 10px; /* Закруглені кути рамки */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    font-family: Arial, sans-serif; /* Шрифт тексту */
+    color: #333; /* Темно-сірий текст */
+}
+
+/* Заголовок форми */
+.order-form h2 {
+    text-align: center; /* Вирівнювання тексту по центру */
+    color: #95b613; /* Синій колір */
+    margin-bottom: 20px; /* Відступ знизу заголовка */
+}
+
+/* Стиль для підписів ("label") */
+.order-form label {
+    font-size: 14px; /* Розмір тексту */
+    color: #444; /* Сірий текст */
+    margin-top: 10px; /* Відступ зверху */
+    display: block; /* Відображення як блок */
+}
+
+/* Поля введення ("input") */
+.order-form input[type="text"],
+.order-form select,
+.order-form textarea {
+    width: 100%; /* Всі поля займають всю ширину форми */
+    padding: 10px; /* Внутрішні відступи всередині поля */
+    margin-bottom: 15px; /* Відступ між полями */
+    border: 1px solid #ccc; /* Сіра рамка */
+    border-radius: 5px; /* Закруглені кути поля */
+    font-size: 16px; /* Розмір тексту */
+    box-sizing: border-box; 
+}
+
+/* Текстова область ("textarea") */
+.order-form textarea {
+    resize: none; /* Забороняємо зміну розміру поля */
+}
+
+/* Радіо кнопки */
+.radio-options {
+    display: flex; /* Відображення в рядок */
+    gap: 15px; /* Проміжки між кнопками */
+    margin-bottom: 15px; /* Відступ знизу */
+}
+
+.radio-options input[type="radio"] {
+    margin-right: 5px; /* Маленький відступ праворуч від тексту */
+}
+
+/* Чекбокси */
+.checkbox-options {
+    display: flex; /* Відображення в рядок */
+    gap: 15px; /* Проміжки між кнопками */
+    margin-bottom: 15px; /* Відступ знизу */
+}
+
+.checkbox-options input[type="checkbox"] {
+    margin-right: 5px; /* Маленький відступ праворуч від тексту */
+}
+
+/* Кнопка відправки */
+.order-form button {
+    width: 100%; /* Кнопка займає всю ширину форми */
+    background-color: #00ee63; /* Синій фон кнопки */
+    color: #915454d5; /* Білий текст */
+    font-size: 16px; /* Розмір шрифту */
+    padding: 10px; /* Внутрішні відступи кнопки */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Закруглені кути кнопки */
+    cursor: pointer; /* Зміна курсора на "руку" при наведенні */
+    transition: background-color 0.3s ease; /* Плавна зміна кольору наводки */
+}
+
+/* Ефект при наведенні (hover) на кнопку */
+.order-form button:hover {
+    background-color: #002f6c; /* Темніший синій фон */

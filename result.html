@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="greeting">
+        <div class="greeting-child">
+            <h2>Дякуємо за покупку!</h2>
+            <div id="results">           
+            </div>
+            <a href="./index.html">Back to form</a>
+        </div>
+    </div>   
+</body>
+</html>
+
+<script>
+    const resultsList = document.getElementById('results');
+
+    new URLSearchParams(window.location.search).forEach((value, name) => {
+        resultsList.append(`${name}: ${value}`)
+        resultsList.append(document.createElement('br'))
+    })
+</script>
+
+<style>
+    .greeting { 
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .greeting-child{
+        border: 3px solid #7cb19c;
+        border-radius: 5px;
+        padding: 25px;
+        background-color: #b5c68a;
+    }
+
+    h2 {
+        color: rgb(255, 247, 165);
+        font-family: cursive;
+    }
+</style>
+ 
